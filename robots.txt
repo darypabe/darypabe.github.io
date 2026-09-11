@@ -1,0 +1,27 @@
+# Dariia Pabolkova, academic portfolio. Unlisted: open to anyone with the link, kept out of search.
+# Google, Bing and Yandex may crawl the page so they can read <meta name="robots" content="noindex">;
+# blocking them here would hide that tag from them. Photos and document scans in /media/ are closed to all.
+# Search engines with unreliable noindex support, and AI training crawlers, are blocked entirely.
+# Image-search crawlers are blocked entirely: noindex does not cover image files, and /assets/og-image.jpg
+# (portrait + name) must stay open for messenger link previews, which use other crawlers.
+
+User-agent: Baiduspider
+User-agent: Sogou web spider
+User-agent: 360Spider
+User-agent: Bytespider
+Disallow: /
+
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: CCBot
+User-agent: Google-Extended
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Googlebot-Image
+User-agent: msnbot-media
+User-agent: YandexImages
+Disallow: /
+
+User-agent: *
+Disallow: /media/
